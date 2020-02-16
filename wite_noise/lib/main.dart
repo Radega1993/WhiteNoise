@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
+import 'package:audioplayers/audioplayers.dart';
+import 'package:audioplayers/audio_cache.dart';
 
 class MyApp extends StatelessWidget {
   @override
@@ -19,10 +21,28 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  AudioPlayer advancedPlayer;
+  AudioCache audioCache;
+
+  @override
+  void initState() {
+    super.initState();
+    initPlayer();
+  }
+
+  void initPlayer() {
+    advancedPlayer = AudioPlayer();
+    audioCache = AudioCache(fixedPlayer: advancedPlayer);
+  }
+
+  String localFilePath;
+
   @override
   Widget build(BuildContext context) {
     var spacecrafts = ["Rain", "Fontain"];
     var imagesBack = ['assets/images/rain.jpg', 'assets/images/fuente.jpg'];
+    var songs = ['music/rain.mp3', 'music/fountain.mp3'];
+    var state = false;
     var myGridView = new GridView.builder(
       itemCount: spacecrafts.length,
       gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
@@ -49,11 +69,14 @@ class _HomeState extends State<Home> {
                     fontSize: 30.0,
                     color: Colors.white,
                   ),
-                )
-            ),
+                )),
           ),
           onTap: () {
             //add player
+            audioCache.play(songs[index]);
+          },
+          onDoubleTap: () {
+            advancedPlayer.stop();
           },
         );
       },
