@@ -73,7 +73,7 @@ class _HomeState extends State<Home> {
           ),
           onTap: () {
             //add player
-            audioCache.play(songs[index]);
+            audioCache.loop(songs[index]);
           },
           onDoubleTap: () {
             advancedPlayer.stop();
