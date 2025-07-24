@@ -1,4 +1,4 @@
-package com.example.wite_noise
+package com.workphony.app
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity
