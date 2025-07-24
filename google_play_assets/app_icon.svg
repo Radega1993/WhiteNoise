@@ -1,0 +1,32 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#1E1B4B"/>
+  
+  <!-- Main circle -->
+  <circle cx="256" cy="256" r="200" fill="#3730A3" stroke="#6366F1" stroke-width="8"/>
+  
+  <!-- Timer circle -->
+  <circle cx="256" cy="256" r="160" fill="none" stroke="#A5B4FC" stroke-width="12" stroke-dasharray="251.2 251.2" stroke-dashoffset="62.8"/>
+  
+  <!-- Sound waves -->
+  <g transform="translate(256, 256)">
+    <!-- Wave 1 -->
+    <path d="M-80,-40 Q-60,-60 -40,-40 T0,-40" stroke="#F59E0B" stroke-width="4" fill="none"/>
+    <path d="M0,-40 Q20,-60 40,-40 T80,-40" stroke="#F59E0B" stroke-width="4" fill="none"/>
+    
+    <!-- Wave 2 -->
+    <path d="M-80,0 Q-60,-20 -40,0 T0,0" stroke="#10B981" stroke-width="4" fill="none"/>
+    <path d="M0,0 Q20,-20 40,0 T80,0" stroke="#10B981" stroke-width="4" fill="none"/>
+    
+    <!-- Wave 3 -->
+    <path d="M-80,40 Q-60,20 -40,40 T0,40" stroke="#8B5CF6" stroke-width="4" fill="none"/>
+    <path d="M0,40 Q20,20 40,40 T80,40" stroke="#8B5CF6" stroke-width="4" fill="none"/>
+  </g>
+  
+  <!-- Center play button -->
+  <circle cx="256" cy="256" r="40" fill="#FFFFFF"/>
+  <polygon points="240,240 240,272 272,256" fill="#1E1B4B"/>
+  
+  <!-- App name -->
+  <text x="256" y="420" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24" font-weight="bold">WORKPHONY</text>
+</svg> 

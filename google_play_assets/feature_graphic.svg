@@ -1,0 +1,50 @@
+<svg width="1024" height="500" viewBox="0 0 1024 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1024" height="500" fill="#1E1B4B"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="150" cy="150" r="80" fill="#3730A3" opacity="0.3"/>
+  <circle cx="874" cy="350" r="60" fill="#6366F1" opacity="0.4"/>
+  <circle cx="800" cy="100" r="40" fill="#A5B4FC" opacity="0.3"/>
+  
+  <!-- Main content area -->
+  <rect x="100" y="100" width="824" height="300" rx="20" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  
+  <!-- App logo representation -->
+  <g transform="translate(200, 250)">
+    <circle cx="0" cy="0" r="60" fill="#3730A3" stroke="#6366F1" stroke-width="3"/>
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#A5B4FC" stroke-width="6" stroke-dasharray="141.4 141.4" stroke-dashoffset="35.4"/>
+    
+    <!-- Sound waves -->
+    <g transform="translate(0, 0)">
+      <path d="M-45,-22 Q-34,-34 -22,-22 T0,-22" stroke="#F59E0B" stroke-width="2" fill="none"/>
+      <path d="M0,-22 Q11,-34 22,-22 T45,-22" stroke="#F59E0B" stroke-width="2" fill="none"/>
+      
+      <path d="M-45,0 Q-34,-11 -22,0 T0,0" stroke="#10B981" stroke-width="2" fill="none"/>
+      <path d="M0,0 Q11,-11 22,0 T45,0" stroke="#10B981" stroke-width="2" fill="none"/>
+      
+      <path d="M-45,22 Q-34,11 -22,22 T0,22" stroke="#8B5CF6" stroke-width="2" fill="none"/>
+      <path d="M0,22 Q11,11 22,22 T45,22" stroke="#8B5CF6" stroke-width="2" fill="none"/>
+    </g>
+    
+    <!-- Play button -->
+    <circle cx="0" cy="0" r="18" fill="#FFFFFF"/>
+    <polygon points="-12,-12 -12,12 12,0" fill="#1E1B4B"/>
+  </g>
+  
+  <!-- Text content -->
+  <text x="400" y="200" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="48" font-weight="bold">WORKPHONY</text>
+  <text x="400" y="240" fill="#E0E7FF" font-family="Arial, sans-serif" font-size="24">Focus & Productivity</text>
+  
+  <!-- Features -->
+  <g transform="translate(400, 280)">
+    <text x="0" y="0" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="16">🎵 High-quality white noise sounds</text>
+    <text x="0" y="25" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="16">⏲️ Smart Pomodoro timer</text>
+    <text x="0" y="50" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="16">🔒 Privacy-first design</text>
+    <text x="0" y="75" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="16">📱 Works offline</text>
+  </g>
+  
+  <!-- Call to action -->
+  <rect x="400" y="380" width="200" height="50" rx="25" fill="#F59E0B"/>
+  <text x="500" y="410" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" font-weight="bold">DOWNLOAD NOW</text>
+</svg> 
